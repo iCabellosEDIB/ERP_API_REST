@@ -1,0 +1,16 @@
+{
+  "name": "erp_api_rest",
+  "version": "1.0.0",
+  "description": "- Descripción\r Este examen de prueba tiene como objetivo evaluar tu capacidad para consumir una API construida con Express y Node.js. La API proporcionada es un conjunto de endpoints sencillos que exponen datos que podrás consumir usando herramientas como fetch, axios o cualquier cliente HTTP de tu preferencia. No se asignará una calificación formal a este examen; su propósito es familiarizarte con el proceso de consumir una API y practicar la integración entre el frontend y el backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+}
