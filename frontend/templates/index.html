@@ -3,30 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mostrar Información</title>
+  <title>Mock de Empleados</title>
   <link rel="stylesheet" href="../css/css_index.css">
 </head>
 <body>
+  <header>
+    <h1>ERP - RRHH Module</h1>
+    <nav>
+      <button onclick="toggleTest('first_test')">Test 1</button>
+      <button onclick="toggleTest('second_test')">Test 2</button>
+    </nav>
+  </header>
+
   <div id="first_test">
     <div>
       <h3>RANDOM EMPLOYEE SELECTED BY GENDER</h3>
-      <p id="female-employee">
-        <!-- PRINT EMPLOYEE HERE -->
-      </p>
-      <p id="male-employee">
-        <!-- PRINT EMPLOYEE HERE -->
-      </p>
+      <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+          <tr>
+            <th>Gender</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Femenino</td>
+            <td>2345678</td>
+            <td>Ana López</td>
+            <td>Calle 3, Sevilla, España</td>
+            <td>Española</td>
+          </tr>
+          <tr>
+            <td>Masculino</td>
+            <td>1234567</td>
+            <td>Carlos Ruiz</td>
+            <td>Calle 5, Madrid, España</td>
+            <td>Española</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div>
+
+    <div style="margin-top: 20px;">
       <h1>Employee List</h1>
-      <ul id="employee-list">
-          <!-- HERE SHOULD PRINT ALL EMPLOYEES SORT BY ID -->
-      </ul>
+      <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Country</th>
+            <th>Gender</th>
+            <th>Admin</th>
+            <th>Created</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1234567</td>
+            <td>Carlos Ruiz</td>
+            <td>Calle 5, Madrid, España</td>
+            <td>Española</td>
+            <td>Masculino</td>
+            <td>✔</td>
+            <td>2016-05-10</td>
+          </tr>
+          <tr>
+            <td>2345678</td>
+            <td>Ana López</td>
+            <td>Calle 3, Sevilla, España</td>
+            <td>Española</td>
+            <td>Femenino</td>
+            <td>✘</td>
+            <td>2018-07-15</td>
+          </tr>
+          <tr>
+            <td>3456789</td>
+            <td>Juan Pérez</td>
+            <td>Calle 8, Barcelona, España</td>
+            <td>Española</td>
+            <td>Masculino</td>
+            <td>✔</td>
+            <td>2017-01-20</td>
+          </tr>
+          <tr>
+            <td>4567890</td>
+            <td>Lucía García</td>
+            <td>Calle 12, Valencia, España</td>
+            <td>Española</td>
+            <td>Femenino</td>
+            <td>✘</td>
+            <td>2019-03-12</td>
+          </tr>
+          <tr>
+            <td>5678901</td>
+            <td>Pedro Fernández</td>
+            <td>Calle 18, Málaga, España</td>
+            <td>Española</td>
+            <td>Masculino</td>
+            <td>✘</td>
+            <td>2020-11-30</td>
+          </tr>
+          <tr>
+            <td>6789012</td>
+            <td>María Sánchez</td>
+            <td>Calle 9, Bilbao, España</td>
+            <td>Española</td>
+            <td>Femenino</td>
+            <td>✔</td>
+            <td>2015-05-28</td>
+          </tr>
+          <tr>
+            <td>7890123</td>
+            <td>Luis Martínez</td>
+            <td>Calle 20, Zaragoza, España</td>
+            <td>Española</td>
+            <td>Masculino</td>
+            <td>✘</td>
+            <td>2021-09-14</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div id="second_test">
+
+  <div id="second_test" class="hidden">
     <div class="form-employees-by-country">
-      <h5>SELECT USERS BY COUNTRY</h5>
+      <h3>SELECT USERS BY COUNTRY</h3>
       <form>
         <select name="country" id="select-country">
           <option value="Española">Spanish</option>
@@ -45,12 +151,72 @@
         <button>Show users</button>
       </form>
       <div>
-        <ul id="employees-by-country">
-          <!-- HERE SHOULD BE FILLED BY EMPLOYEES BY SELECTED COUNTRY -->
-        </ul>
+        <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Country</th>
+              <th>Gender</th>
+              <th>Admin</th>
+              <th>Created</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1234567</td>
+              <td>Carlos Ruiz</td>
+              <td>Calle 5, Madrid, España</td>
+              <td>Española</td>
+              <td>Masculino</td>
+              <td>✔</td>
+              <td>2016-05-10</td>
+            </tr>
+            <tr>
+              <td>2345678</td>
+              <td>Ana López</td>
+              <td>Calle 3, Sevilla, España</td>
+              <td>Española</td>
+              <td>Femenino</td>
+              <td>✘</td>
+              <td>2018-07-15</td>
+            </tr>
+            <tr>
+              <td>3456789</td>
+              <td>Juan Pérez</td>
+              <td>Calle 8, Barcelona, España</td>
+              <td>Española</td>
+              <td>Masculino</td>
+              <td>✔</td>
+              <td>2017-01-20</td>
+            </tr>
+            <tr>
+              <td>4567890</td>
+              <td>Lucía García</td>
+              <td>Calle 12, Valencia, España</td>
+              <td>Española</td>
+              <td>Femenino</td>
+              <td>✘</td>
+              <td>2019-03-12</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-  <script src="../../backend/controller.js"></script>
+
+  <script>
+    function toggleTest(testId) {
+      const allTests = document.querySelectorAll('#first_test, #second_test');
+      allTests.forEach(test => {
+        if (test.id === testId) {
+          test.classList.remove('hidden');
+        } else {
+          test.classList.add('hidden');
+        }
+      });
+    }
+  </script>
 </body>
 </html>
