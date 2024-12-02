@@ -7,18 +7,50 @@
   <link rel="stylesheet" href="../css/css_index.css">
 </head>
 <body>
-  <div>
-    <h3>EMPLOYEE OF THE MONTH</h3>
-    <p id="most-valuable-employee-this-month">
-        <!-- PRINT ANY EMPLOYEE HERE -->
-    </p>
+  <div id="first_test">
+    <div>
+      <h3>RANDOM EMPLOYEE SELECTED BY GENDER</h3>
+      <p id="female-employee">
+        <!-- PRINT EMPLOYEE HERE -->
+      </p>
+      <p id="male-employee">
+        <!-- PRINT EMPLOYEE HERE -->
+      </p>
+    </div>
+    <div>
+      <h1>Employee List</h1>
+      <ul id="employee-list">
+          <!-- HERE SHOULD PRINT ALL EMPLOYEES SORT BY ID -->
+      </ul>
+    </div>
   </div>
-  <div>
-    <h1>Lista de Empleados</h1>
-    <ul id="empleados-lista">
-        <!-- HERE SHOULD PRINT ALL EMPLOYEES SORT BY ID -->
-    </ul>
-  </div> 
+  <div id="second_test">
+    <div class="form-employees-by-country">
+      <h5>SELECT USERS BY COUNTRY</h5>
+      <form>
+        <select name="country" id="select-country">
+          <option value="Española">Spanish</option>
+          <option value="Colombiana">Colombian</option>
+          <option value="Argentina">Argentine</option>
+          <option value="Peruana">Peruvian</option>
+          <option value="Mexicana">Mexican</option>
+          <option value="Chilena">Chilean</option>
+          <option value="Venezolana">Venezuelan</option>
+          <option value="Ecuatoriana">Ecuadorian</option>
+          <option value="Uruguaya">Uruguayan</option>
+          <option value="Salvadoreña">Salvadoran</option>
+          <option value="Boliviana">Bolivian</option>
+          <option value="Paraguaya">Paraguayan</option>
+        </select>
+        <button>Show users</button>
+      </form>
+      <div>
+        <ul id="employees-by-country">
+          <!-- HERE SHOULD BE FILLED BY EMPLOYEES BY SELECTED COUNTRY -->
+        </ul>
+      </div>
+    </div>
+  </div>
   <script src="../../backend/controller.js"></script>
 </body>
 </html>

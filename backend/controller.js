@@ -14,17 +14,35 @@ fetch(url)
     return response.json();
 })
 .then(function(data) {
-    printEmployees(data);
+    // CALL FUNCTIONS TO PROCESS DATA HERE
 })
 .catch(function(error) {
     console.error('Error:', error);
 });
 
 
-function printEmployees() {
+// TEST 1
+
+function printEmployeesSortedByID(employees) {
     // CODE HERE
 }
 
-function printYourFavoriteEmployee() {
+function printARandomWoman(employee) {
+    /**
+    Print a random Female Employee
+    */
+    // CODE HERE
+}
+
+function printARandomMen(employee) {
+    /**
+    Print a random Male Employee
+    */
+    // CODE HERE
+}
+
+// TEST 2
+
+function selectAllUsersFromACountry(country, employees) {
     // CODE HERE
 }
