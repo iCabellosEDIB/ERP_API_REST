@@ -86,7 +86,7 @@ form select {
 }
 
 form button {
-  background-color: #007aff;
+  background-color: #6c757d;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -94,7 +94,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #005bb5;
+  background-color: #5a6268;
 }
 
 ul {
