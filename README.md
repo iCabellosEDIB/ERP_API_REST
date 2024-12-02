@@ -22,13 +22,13 @@ Before you begin, ensure you have the following installed on your system:
    Clone this repository to your local machine or download the source code.
 
    ```bash
-   git clone <repository_url>
-   cd <project_directory>
+   git clone https://github.com/iCabellosEDIB/ERP_API_REST.git
+   cd ERP_API_REST
    ```
 
 2. **Install Node.js Dependencies**
 
-Run the following command to install the required Node.js modules:
+Run the following command in the main directory to install the required Node.js modules:
 
 ```bash
 npm install
@@ -40,7 +40,7 @@ Run the Express Server
 Start the Express server on port 3000 by running the following command:
 
 ```bash
-node server.js
+node .\API_Users\server.js
 ```
 The server will be accessible at http://localhost:3000.
 
