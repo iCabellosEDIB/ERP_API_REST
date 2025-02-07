@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERP - EDIB - SGE</title>
+  <link rel="stylesheet" href="../css/css_index.css">
+  <script src="/ERP_API_REST/backend/controller.js"></script>
+</head>
+<body>
+  <header>
+    <h1>ERP - Products Module</h1>
+    <nav>
+      <a href="index.html"><button>Main page</button></a>
+    </nav>
+  </header>
+
+  <div id="display_products">
+    <div>
+      <h1>Products List</h1>
+      <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+      </table>
+      <h3 style="margin-top: 20px;">Recommended product for YOU &lt;3</h3>
+      <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+      </table>
+    </div>
+  </div>
+
+  <div id="second_test" class="hidden">
+    <div class="form-employees-by-country">
+      <h3>SELECT USERS BY COUNTRY</h3>
+      <form>
+        <select name="country" id="select-country">
+        </select>
+        <button>Show users</button>
+      </form>
+      <div>
+        <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleTest(testId) {
+      const allTests = document.querySelectorAll('#first_test, #second_test');
+      allTests.forEach(test => {
+        if (test.id === testId) {
+          test.classList.remove('hidden');
+        } else {
+          test.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

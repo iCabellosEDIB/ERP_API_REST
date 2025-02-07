@@ -254,6 +254,153 @@ app.get('/API/employees/json/', (req, res) => {
   ])
 });
 
+// GET API PRODUCTS
+app.get('/API/products/json/', (req, res) => {
+  res.json([
+    {
+      "id": 1,
+      "type": "clothing",
+      "p": "Official team t-shirt",
+      "price": 25.99,
+      "stock": 150
+    },
+    {
+      "id": 2,
+      "type": "clothing",
+      "p": "Hoodie",
+      "price": 39.99,
+      "stock": 100
+    },
+    {
+      "id": 3,
+      "type": "clothing",
+      "p": "Varsity jacket",
+      "price": 49.99,
+      "stock": 75
+    },
+    {
+      "id": 4,
+      "type": "clothing",
+      "p": "Sweatpants",
+      "price": 34.99,
+      "stock": 120
+    },
+    {
+      "id": 5,
+      "type": "clothing",
+      "p": "Snapback cap",
+      "price": 19.99,
+      "stock": 200
+    },
+    {
+      "id": 6,
+      "type": "clothing",
+      "p": "Limited edition jersey",
+      "price": 59.99,
+      "stock": 50
+    },
+    {
+      "id": 7,
+      "type": "clothing",
+      "p": "Team logo socks",
+      "price": 9.99,
+      "stock": 300
+    },
+    {
+      "id": 8,
+      "type": "clothing",
+      "p": "Winter scarf",
+      "price": 14.99,
+      "stock": 180
+    },
+    {
+      "id": 9,
+      "type": "clothing",
+      "p": "Touchscreen gloves",
+      "price": 12.99,
+      "stock": 130
+    },
+    {
+      "id": 10,
+      "type": "clothing",
+      "p": "Padded vest",
+      "price": 44.99,
+      "stock": 90
+    },
+    {
+      "id": 11,
+      "type": "accessories",
+      "p": "Team logo backpack",
+      "price": 29.99,
+      "stock": 110
+    },
+    {
+      "id": 12,
+      "type": "accessories",
+      "p": "Custom keychains",
+      "price": 7.99,
+      "stock": 250
+    },
+    {
+      "id": 13,
+      "type": "accessories",
+      "p": "Silicone bracelet",
+      "price": 5.99,
+      "stock": 320
+    },
+    {
+      "id": 14,
+      "type": "accessories",
+      "p": "Custom sunglasses",
+      "price": 22.99,
+      "stock": 95
+    },
+    {
+      "id": 15,
+      "type": "home",
+      "p": "Team logo mug",
+      "price": 10.99,
+      "stock": 180
+    },
+    {
+      "id": 16,
+      "type": "home",
+      "p": "Mouse pad",
+      "price": 12.99,
+      "stock": 160
+    },
+    {
+      "id": 17,
+      "type": "gaming",
+      "p": "Gamer chair with team design",
+      "price": 199.99,
+      "stock": 30
+    },
+    {
+      "id": 18,
+      "type": "gaming",
+      "p": "Custom mechanical keyboard",
+      "price": 89.99,
+      "stock": 50
+    },
+    {
+      "id": 19,
+      "type": "wallpapers",
+      "p": "HD wallpaper pack",
+      "price": 4.99,
+      "stock": 999
+    },
+    {
+      "id": 20,
+      "type": "stickers",
+      "p": "Laptop sticker set",
+      "price": 8.99,
+      "stock": 220
+    }
+]);
+
+});
+
 // Server running
 app.listen(PORT, () => {
   console.log(`Server running in ${PORT}`);
